@@ -1,0 +1,54 @@
+AI-Powered Nutrition Analyzer For Fitness Enthusiasts
+Literature Survey
+ 
+ 
+Team Members :
+Malini R (311019106036)
+Sriman Narayanan P G (311019106066)
+Nisha Rasaili (311019106045)
+Mathangi Sriraman (311019106038)
+
+ 
+PROJECT DESCRIPTION
+ 
+Food is essential for human life and has been the concern of many healthcare conventions. Nowadays new dietary assessment and nutrition analysis tools enable more opportunities to help people understand their daily eating habits, exploring nutrition patterns and maintain a healthy diet. Nutritional analysis is the process of determining the nutritional content of food. It is a vital part of analytical chemistry that provides information about the chemical composition, processing, quality control and contamination of food.
+ 
+ The main aim of the project is to build a model which is used for classifying the fruit depends on the different characteristics like colour, shape, texture etc. Here the user can capture the images of different fruits and then the image will be sent the trained model. The model analyses the image and detect the nutrition based on the fruits like (Sugar, Fib-re, Protein, Calories, etc.).
+
+Calculating Nutrition Facts with Computer Vision — Foodify.ai
+ January 27, 2022
+Last Updated on January 27, 2022 by Editorial Team
+Author(s): Durgesh Samariya
+Computer Vision
+
+Calculating Nutrition Facts with Computer Vision — Foodify.ai
+
+A Computer Vision-based Indian Food Detection and Nutrition Calculation App.
+The second most populous country in the world, India has enjoyed steady economic growth and has achieved self-sufficiency in grain production in recent years. — https://www.wfp.org/countries/india
+Indian cuisine consists of a variety of traditional cuisines native to the region. Given the diversity in soil, climate, culture, ethnic groups, and occupations, these cuisines vary substantially and use locally available spices, herbs, vegetables, and fruits. Around 1.4 Billion people leaving in 36 states and union territories, with unique dishes and heritage.
+In this era, people are becoming more health-conscious than before. However, there is a lack of knowledge about different fitness and wellness aspects of food. Thus, I come up with Foodify.ai — a deep learning-based application that detects food from the image and provides information of food such as protein, vitamins, calories, minerals, carbs, etc.
+As far as I know, there is no such application or public dataset available in the context of Indian food for the deep learning community. Thus, to address this research gap, I developed Foodify.ai. The goal of this app is:
+a world’s largest Indian food image dataset (I will make it publicly available)
+an app that detects Indian food and provides nutrition information.
+
+Stages of application
+
+Stage 1: Image Collection Application ()
+App. https://share.streamlit.io/durgeshsamariya/foodify.ai/main/data_collector_app.py
+To develop any machine learning or deep learning model, the most important thing is data. So to start with, I downloaded images from Google and Microsoft bing. However, to create the world’s largest dataset these images are not enough. So, I created a web app that collects images from users. If you want to contribute, you can upload images here.
+
+Stage 2: Train Deep Learning Model and Develop Prototype Application
+Currently, I have trained a model using 30 different food items. You can check the working application here.
+Simple working application. https://foodify.ai
+
+Stage 3: Create a nutrition Database
+In this, I will create a nutrition database by searching different nutrition databases. So far I am aware of only USDA Nutritional Database. However, I will search more when I will start this step.
+
+Stage 4: Develop Mobile App
+To develop a mobile app, I have to integrate whatever I have done in stages 1, 2, and 3. The final mobile application will allow a user to click/upload an image of any Indian food, which is passed as input to our model and return food type. From the detected food type, our app will look in the nutrition database and finally return information related to that food from our nutrition data.
+Challenges
+The task of food detection/classification is not easy as it seems. During my early days, my primary goal was to create the world’s largest Indian food dataset for my research. Initially, I defined 151 Food categories to create my model. However, it is difficult to distinguish some items such as Naan, Butter Naan, Cheese Naan, and Garlic Naan. Similarly, it is difficult to identify Dal, Dal Fry, Dal Tadka, or let’s consider Paratha, Aloo Paratha, Gobi Paratha, and Paneer Paratha. Thus, I created a single category for Naan, Dal, Parotha, and many more. In the final version, I am planning to return all possible options related to the given Image. For example, if a user uploads a dal image then the Foodify.ai app return all dal’s from our nutrition database such as Dal Tadka, Dal Fry, Dal Makhni, etc.
+Another challenge is to collect images to create a huge dataset. To solve this issue I have created a web app for image collection which you can find here. I am also planning to crawl images from Instagram, Flicker, Pinterest, and other social media platforms for images for each category.
+There is another challenge, which is related to training the deep learning model. It is an   expensive and time-consuming task to train the model repeatedly. This can be solved by using cloud-based services. (Already using AWS).
+.
+
